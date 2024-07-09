@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VITEST-PORTOFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="..." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+      /* Import Google Font - for example, 'Roboto' */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif; /* Change default font for the entire document */
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif; /* Apply Roboto font to headings */
+        font-weight: 600; /* Make headings bold */
+      }
+
+      p {
+        font-family: "Roboto", sans-serif; /* Apply Roboto font to paragraphs */
+      }
+
+      #home {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #home video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 660px;
+        object-fit: cover;
+      }
+
+      #home .content {
+        position: relative;
+        width: 100%;
+        height: 660px;
+      }
+      #contact {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #contact video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 660px;
+        object-fit: cover;
+      }
+
+      #contact .content {
+        position: relative;
+        width: 100%;
+        height: 660px;
+      }
+
+      section {
+        width: 100%;
+      }
+
+      /* Styling untuk input form */
+      .form-control {
+        border: none;
+        border-bottom: 1px solid white; /* Garis bawah */
+        border-radius: 0; /* Menghilangkan border-radius */
+        color: white; /* Warna teks */
+      }
+
+      /* Styling untuk placeholder */
+      .form-control::placeholder {
+        color: white; /* Warna placeholder */
+        opacity: 0.5; /* Opasitas placeholder */
+      }
+      /* CSS tambahan untuk tampilan tombol */
+      .btn-custom {
+        background-color: black; /* Warna hitam transparan */
+        border-color: black; /* Warna border sesuai dengan Bootstrap */
+        color: white; /* Warna teks */
+        transition: all 0.3s ease;
+      }
+
+      .btn-custom:hover {
+        background-color: blueviolet; /* Warna hitam transparan saat dihover */
+        border-color: blueviolet; /* Warna border saat dihover */
+      }
+
+      @media (max-width: 991px) {
+        .font-costum {
+          font-size: 18px; /* Ubah ukuran teks untuk tampilan mobile */
+        }
+        .about-img {
+          width: 50px;
+        }
+        #contact video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 800px;
+          object-fit: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-5">
+              <i class="bi bi-house-door"></i>
+              <a class="nav-link text-light" href="#home">HOME</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link text-light" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link text-light" href="#project">PROJECT</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link text-light" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <video autoplay muted loop>
+        <source src="asset/bg_home.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="content d-flex flex-column justify-content-center align-items-center">
+        <h2 class="display-4 fw-bold">HELLO THERE</h2>
+        <p class="lead fw-bold mb-5">I AM VITEST. I AM <span id="typed-output"></span></p>
+      </div>
+    </section>
+
+    <section id="about" class="bg-body-secondary">
+      <div class="container py-5">
+        <h2 class="text-center mt-2 fs-1">- ABOUT ME -</h2>
+        <p class="text-center my-2">introduce my self</p>
+
+        <p class="my-5 font-costum">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum esse, adipisci perferendis perspiciatis optio recusandae modi nulla? Quia praesentium sequi repudiandae voluptate minima consectetur magnam alias quidem repellat?
+          Ducimus natus non ipsum nemo reprehenderit saepe impedit libero temporibus? Ducimus aliquid ipsum laborum sequi, quo delectus, autem soluta vel impedit pariatur aspernatur modi iste tenetur voluptatibus dolore odit. Illo suscipit
+          autem ipsa commodi laudantium inventore alias velit ab, nesciunt ex doloremque est impedit dignissimos voluptatibus quia exercitationem cumque vel, maxime quaerat aperiam natus amet reprehenderit eveniet aspernatur! Incidunt
+          officiis eaque voluptates fugiat veritatis architecto, praesentium et temporibus laudantium qui corrupti facilis.
+        </p>
+        <p class="my-5 fs-3 text-center">Programming Language</p>
+        <div class="d-flex justify-content-evenly about-costum my-5">
+          <img src="asset/html.png" alt="" class="about-img" width="70px" />
+          <img src="asset/css.png" alt="" class="about-img" width="70px" />
+          <img src="asset/js.png" alt="" class="about-img" width="70px" />
+          <img src="asset/bootstrap.png" alt="" class="about-img" width="70px" />
+          <img src="asset/php.png" alt="" class="about-img" width="70px" />
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="bg-dark">
+      <div class="container">
+        <h2 class="text-center text-light pt-5 fs-1">- MY PROJECTS -</h2>
+        <p class="text-center text-light my-2">my little projects..</p>
+
+        <div class="container p-0 mt-5 pb-5">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 mb-4">
+              <div class="card border-0 mx-auto" style="width: 19rem">
+                <img src="asset/Screenshot 2023-11-14 155129.png" class="card-img-top shadow img-fluid object-fit-cover" style="height: 170px" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Website Food</h5>
+                  <p class="card-text">Project pengerjaan ketika saya melakukan PKL menggunakan framework Laravel serta bootstrap untuk resvonsivenya</p>
+                  <a href="https://projecttastyfood.000webhostapp.com/" class="btn btn-primary">Kunjungi</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card border-0 mx-auto" style="width: 19rem">
+                <img src="asset/Screenshot 2023-11-14 155320.png" class="card-img-top shadow img-fluid object-fit-cover" style="height: 170px" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Portal Berita</h5>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, eum eius. Minima aliquam similique delectus.</p>
+                  <a href="404.html" class="btn btn-primary">Kunjungi</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card border-0 mx-auto" style="width: 19rem">
+                <img src="asset/Screenshot (8).png" class="card-img-top shadow img-fluid object-fit-cover" style="height: 170px" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Project</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas excepturi facere nihil non ipsam.</p>
+                  <a href="404.html" class="btn btn-primary">Kunjungi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <video autoplay muted loop>
+        <source src="asset/bg_contact.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="content d-flex flex-column">
+        <h1 class="my-5 text-white">CONTACT ME !</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mb-5">
+            <form id="contactForm" class="p-5" style="background-color: rgba(0, 0, 0, 0.5)">
+              <div class="form-group mb-5">
+                <input class="form-control bg-transparent text-white border-0 border-bottom" type="text" name="nama" placeholder="Nama" aria-label="Nama" />
+              </div>
+              <div class="form-group my-5">
+                <input type="email" class="form-control bg-transparent text-white border-0 border-bottom" name="email" placeholder="Email" />
+              </div>
+              <div class="form-group my-5">
+                <textarea class="form-control bg-transparent text-white border-0 border-bottom" rows="3" name="pesan" placeholder="Pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark btn-custom btn-lg"><i class="fas fa-paper-plane text-white"></i> Kirim</button>
+            </form>
+            </div>
+            <div class="col-lg-4 my-3">
+              <h4>FOLLOW ME ON</h4>
+              <div class="mt-5">
+                <a href="https://www.instagram.com/akun-instagram" class="text-decoration-none text-light">
+                  <i class="fab fa-instagram fa-2x mx-2"></i>
+                </a>
+                <a href="https://www.facebook.com/akun-facebook" class="text-decoration-none text-light">
+                  <i class="fab fa-facebook fa-2x mx-2"></i>
+                </a>
+                <a href="https://www.spotify.com/akun-spotify" class="text-decoration-none text-light">
+                  <i class="fab fa-spotify fa-2x mx-2"></i>
+                </a>
+                <a href="https://www.youtube.com/akun-youtube" class="text-decoration-none text-light">
+                  <i class="fab fa-youtube fa-2x mx-2"></i>
+                </a>
+                <a href="https://www.discord.com/akun-discord" class="text-decoration-none text-light">
+                  <i class="fab fa-discord fa-2x mx-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed("#typed-output", {
+        strings: ["PROGRAMER", "GAMERS"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true,
+      });
+    </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Menghentikan pengiriman form standar
+      let nama = document.querySelector('input[name="nama"]').value;
+      let email = document.querySelector('input[name="email"]').value;
+      let pesan = document.querySelector('textarea[name="pesan"]').value;
+
+      // Lakukan validasi jika diperlukan
+
+      // URL endpoint API WhatsApp
+      let api_url = 'https://api.whatsapp.com/send?phone=6289648112615&text=';
+
+      // Pesan yang akan dikirim melalui WhatsApp
+      let whatsapp_message = `Pesan dari: ${nama}%0aEmail: ${email}%0aPesan: ${pesan}`;
+
+      // Buat URL redirect
+      let final_url = api_url + encodeURIComponent(whatsapp_message);
+
+      // Redirect ke URL WhatsApp
+      window.location.href = final_url;
+    });
+  });
+</script>
+
+  </body>
+</html>
